@@ -4,35 +4,51 @@ using UnityEngine;
 
 public class Club : MonoBehaviour
 {
-	public GameObject ball;
+	public Ball ball;
 	public SpriteRenderer GolfStick;
-	// private static int Score;
-	public int HitPower;
-    // private Ball newBall1;
-
-    // public Ball NewBall { get; private set; }
-
+	public float HitPower = 0;
+	private static float	_speedClub = 0.2f;
+   
     // Use this for initialization
     void Start ()
 	{
-		// Score = 15;
-		HitPower = 0;
-		GolfStick.transform.position = new Vector3(ball.transform.position.x, ball.transform.position.y, 0);
+		GolfStick.transform.position = new Vector3(ball.transform.position.x - 0.2f, ball.transform.position.y, 0);
 	}
 	
 	// Update is called once per frame
 	void Update ()
 	{
-		if (ball.transform.position.y > 3)
-		{
+		//Flip Club if above hole
+		if (ball.transform.position.y >= 3.2f)
 			GolfStick.flipY = true;
-		}
-		if (Input.GetKey("space"))
+		else
+			GolfStick.flipY = false;
+
+		//Movement of Ball
+		if (HitPower > 0 && Input.GetKey("space") == false)
 		{
-			HitPower += 1;
-			GolfStick.transform.position = new Vector3(GolfStick.transform.position.x, (GolfStick.transform.position.y - 0.2f), 0);
-			// NewBall = GolfStick.GetComponent<Ball>();
-			// NewBall.initBallClass(HitPower);
+			GolfStick.transform.position = new Vector3(ball.transform.position.x - 0.2f, ball.transform.position.y, 0);
+			ball.initBallClass(HitPower);
+			enabled = false;
 		}
+
+		//Movement of club
+		if (Input.GetKey("space") && GolfStick.flipY != true)
+		{
+			HitPower += 0.2f;
+			GolfStick.transform.position = new Vector3(GolfStick.transform.position.x, GolfStick.transform.position.y - _speedClub, 0);
+		}
+		else if (Input.GetKey("space") && GolfStick.flipY == true)
+		{
+			HitPower += 0.2f;
+			GolfStick.transform.position = new Vector3(GolfStick.transform.position.x, GolfStick.transform.position.y + _speedClub, 0);
+		}
+	}
+
+	public void	reenable()
+	{
+		HitPower = 0;
+		GolfStick.transform.position = new Vector3(ball.transform.position.x - 0.2f, ball.transform.position.y, 0);
+		enabled = true;
 	}
 }
