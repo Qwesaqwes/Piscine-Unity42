@@ -5,7 +5,7 @@ using UnityEngine;
 public class CameraScript_ex00 : MonoBehaviour
 {
 	public GameObject[]	player;
-	private static int	selectedPlayer = 0;
+	private int	selectedPlayer = 0;
 	
 	// Use this for initialization
 	void Start ()

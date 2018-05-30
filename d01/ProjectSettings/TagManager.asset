@@ -3,7 +3,10 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Ground
+  - Exit
+  - Teleport
   layers:
   - Default
   - TransparentFX
@@ -13,12 +16,12 @@ TagManager:
   - UI
   - 
   - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
+  - JPlat
+  - TPlat
+  - CPlat
+  - Thomas
+  - John
+  - Claire
   - 
   - 
   - 

@@ -52,8 +52,14 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Scripts\CameraScript_ex00.cs" />
+     <Compile Include="Assets\Scripts\FinishLine.cs" />
+     <Compile Include="Assets\Scripts\InverseObj.cs" />
+     <Compile Include="Assets\Scripts\LoadScene2.cs" />
+     <Compile Include="Assets\Scripts\LoadScene3.cs" />
+     <Compile Include="Assets\Scripts\MovingPlat.cs" />
      <Compile Include="Assets\Scripts\playerScript_ex00.cs" />
      <Compile Include="Assets\Scripts\playerScript_ex01.cs" />
+     <Compile Include="Assets\Scripts\TeleportIN.cs" />
  <Reference Include="UnityEngine.UIAutomation">
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UIAutomation/UnityEngine.UIAutomation.dll</HintPath>
  </Reference>
