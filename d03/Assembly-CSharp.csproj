@@ -55,6 +55,8 @@
      <Compile Include="Assets\Scripts\ennemyScript.cs" />
      <Compile Include="Assets\Scripts\ennemySpawner.cs" />
      <Compile Include="Assets\Scripts\ex00\Button.cs" />
+     <Compile Include="Assets\Scripts\ex01\ItemDragHandler.cs" />
+     <Compile Include="Assets\Scripts\ex01\UIManager.cs" />
      <Compile Include="Assets\Scripts\explosion.cs" />
      <Compile Include="Assets\Scripts\gameManager.cs" />
      <Compile Include="Assets\Scripts\gatlingImpactScript.cs" />

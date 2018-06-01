@@ -23,7 +23,7 @@ TagManager:
   - 
   - 
   - map00
-  - 
+  - Background
   - 
   - 
   - 
@@ -49,6 +49,12 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Background
+    uniqueID: 1552500077
+    locked: 0
+  - name: Ignore Raycast
+    uniqueID: 4114495067
     locked: 0
   - name: UI
     uniqueID: 2967419527
