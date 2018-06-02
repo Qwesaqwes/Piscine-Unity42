@@ -51,12 +51,17 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Scripts\BulletScript.cs" />
+     <Compile Include="Assets\Scripts\bulletSpawn.cs" />
+     <Compile Include="Assets\Scripts\Camera\FollowCamera.cs" />
+     <Compile Include="Assets\Scripts\MeleeScript.cs" />
      <Compile Include="Assets\Scripts\PlayerMovement.cs" />
+     <Compile Include="Assets\Scripts\RotatePickUps.cs" />
      <None Include="Assets\Fonts\friday13\Font License.txt" />
      <None Include="Assets\Fonts\d3digitalism\Read Me.txt" />
      <None Include="Assets\Fonts\shoguns_clan\README.txt" />
      <None Include="Assets\Fonts\justice\justice.txt" />
-     <None Include="Assets\Sprites\README.txt" />
+     <None Include="Assets\Resources\Sprites\README.txt" />
  <Reference Include="UnityEngine.UIAutomation">
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UIAutomation/UnityEngine.UIAutomation.dll</HintPath>
  </Reference>
