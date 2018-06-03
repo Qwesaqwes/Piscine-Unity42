@@ -7,6 +7,11 @@ TagManager:
   - Weapon
   - Character
   - Bullet
+  - wall
+  - ground
+  - door
+  - Object
+  - Ennemi
   layers:
   - Default
   - TransparentFX
@@ -20,9 +25,9 @@ TagManager:
   - Character
   - PickUp
   - Melee
-  - 
-  - 
-  - 
+  - Sceneries
+  - Ennemi
+  - EnnemiBullet
   - 
   - 
   - 
@@ -43,4 +48,16 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Ground
+    uniqueID: 1473943333
+    locked: 0
+  - name: Wall
+    uniqueID: 3056044403
+    locked: 0
+  - name: Scenery
+    uniqueID: 3931715829
+    locked: 0
+  - name: Player
+    uniqueID: 3304104067
     locked: 0

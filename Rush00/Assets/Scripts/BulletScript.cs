@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class BulletScript : MonoBehaviour
 {
-
 	// Use this for initialization
 	void Start ()
 	{
@@ -14,8 +13,6 @@ public class BulletScript : MonoBehaviour
         mousePos.y = mousePos.y - transform.position.y;
         float angle = Mathf.Atan2(mousePos.y, mousePos.x) * Mathf.Rad2Deg;
         transform.rotation = Quaternion.Euler(new Vector3(0, 0, angle));
-		
-
 	}
 	
 	// Update is called once per frame

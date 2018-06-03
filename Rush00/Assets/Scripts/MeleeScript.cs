@@ -21,7 +21,7 @@ public class MeleeScript : MonoBehaviour
 	{
 	// 	GetComponent<Rigidbody2D>().AddForce(transform.right * 100);//, ForceMode2D.Impulse);
 		
-		// Destroy(gameObject, 1); //only for test
+		Destroy(gameObject, 0.2f); //only for test
 	}
 
 	private void OnCollisionEnter2D(Collision2D other)
